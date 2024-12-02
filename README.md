@@ -21,13 +21,12 @@ Certifique-se de ter o Python instalado na sua máquina (versão 3.x recomendada
 python port_scanner.py
 ```
 
-Exemplo de Execução
-bash
-Copiar código
+## Exemplo de Execução
+```bash
 Selecione o IP do Alvo: 192.168.1.1  
 Scanning 192.168.1.1 for open ports in range range(1, 1025)...  
 Port 22 is open on 192.168.1.1.  
-Port 80 is open on 192.168.1.1.  
+Port 80 is open on 192.168.1.1.
 
 Open ports on 192.168.1.1: [22, 80]  
 Como Funciona
@@ -36,8 +35,8 @@ Verifica se uma porta específica está aberta no IP alvo, tentando estabelecer 
 
 scan_ports(target_ip, port_range)
 Realiza a varredura de todas as portas dentro do intervalo fornecido, utilizando a função is_port_open.
-
-Execução Principal
+```
+## Execução Principal
 
 Solicita o IP alvo ao usuário.
 Define o intervalo de portas (atualmente de 1 a 1024).
@@ -53,5 +52,6 @@ Timeout de Conexão
 O tempo de espera para tentar uma conexão pode ser alterado na função is_port_open:
 
 python
-Copiar código
+```bash
 sock.settimeout(1)  # Tempo em segundos
+```
